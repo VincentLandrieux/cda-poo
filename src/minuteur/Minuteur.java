@@ -21,11 +21,13 @@ public class Minuteur {
 	public int getMinute() {
 		return this.minute;
 	}
-	public void setMinute(int minute) {
-		if(minute > 59) {
-			minute = minute%60;
+	public void setMinute(int pMinute) {
+		if(pMinute > 59) {
+			pMinute = pMinute%60;
+		}else if(pMinute < 0) {
+			pMinute = 0;
 		}
-		this.minute = Math.abs(minute);
+		this.minute = Math.abs(pMinute);
 	}
 	
 	public void avancer(int n) {
