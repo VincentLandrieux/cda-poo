@@ -4,13 +4,41 @@ import java.util.Scanner;
 
 public class Ennemi {
 	//propriétés
-	float posX;
-	float posY;
+	private float posX;
+	private float posY;
 	
-	int pv;
-	int rapidite;
+	private int pv;
+	private int rapidite;
 	
 	static int compteur = 0;
+	
+	//Accesseurs
+	//get
+	public float getPosX() {
+		return this.posX;
+	}
+	public float getPosY() {
+		return this.posY;
+	}
+	public int getPv() {
+		return this.pv;
+	}
+	public int getRapidite() {
+		return this.rapidite;
+	}
+	//set
+	public void setPosX(float pPosX) {
+		this.posX = pPosX;
+	}
+	public void setPosY(float pPosY) {
+		this.posY = pPosY;
+	}
+	public void setPv(int pPv) {
+		this.pv = pPv;
+	}
+	public void setRapidite(int pRapidite) {
+		this.rapidite = pRapidite;
+	}
 	
 	//Constructeurs
 	public Ennemi() {

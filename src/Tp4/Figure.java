@@ -36,9 +36,7 @@ abstract class Figure {
 		System.out.println("("+this.x+","+this.y+")");
 	}
 	
-	public double aire() {
-		return 0;
-	}
+	public abstract double aire();
 	
 	protected void dessine() {
 		affiche();
